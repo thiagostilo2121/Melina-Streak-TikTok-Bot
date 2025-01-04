@@ -85,10 +85,11 @@ Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 ---
 
 ## 🔗 Recursos
-- [Documentación oficial de Selenium](https://www.selenium.dev/documentation/)
+- [Documentación oficial de Selenium](https://www.selenium.dev/documentation)
+- [Versiones oficiales de Melina STB](https://www.github.com/thiagostilo2121/Melina-Streak-TikTok-Bot/releases)
 
 ---
 
 ## 🌟 Autor
 Creado con pasión por Thiago Valentín Stilo Limarino.
-
+Las pruebas del programa fueron llevadas a cabo por el autor y una persona más.
