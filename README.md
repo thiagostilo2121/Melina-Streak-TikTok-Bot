@@ -44,7 +44,7 @@ Melina Streak TikTok Bot es una herramienta automática desarrollada en Python p
 5. **Configurar el archivo `config.py`**
    - Abre el archivo `config.py` y configura el nombre del perfil de Chrome y otros parámetros según tus necesidades.
 
-6. **Crear archivos de usuarios en la carpeta `USERS`**
+6. **Crear archivos de usuarios en la carpeta `USERS` (puedes hacerlo con `config.py`)**
    - Crea un archivo de texto con el nombre del contacto objetivo, por ejemplo, `STILO.txt`.
    - Dentro del archivo, escribe el nombre exacto del usuario en TikTok (por ejemplo, `Stilo`).
 
@@ -52,7 +52,7 @@ Melina Streak TikTok Bot es una herramienta automática desarrollada en Python p
 
 ## 💡 Uso
 1. **Ejecutar el bot**
-   - Abre start.bat
+   - Abre `start.bat`
 3. Selecciona el usuario objetivo desde el menú.
 4. El bot enviará automáticamente un mensaje a la hora programada.
 
