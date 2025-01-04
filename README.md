@@ -90,6 +90,5 @@ Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 
 ---
 
-## 🌟 Autor
-Creado con pasión por Thiago Valentín Stilo Limarino.
-Las pruebas del programa fueron llevadas a cabo por el autor y una persona más.
+## 🌟 Créditos
+Creado con pasión por Thiago Valentín Stilo Limarino. Las pruebas del programa fueron llevadas a cabo por el autor y una persona más.
