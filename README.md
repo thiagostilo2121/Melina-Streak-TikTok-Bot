@@ -1,9 +1,10 @@
 # Melina Streak TikTok Bot
 
-![Logo del Proyecto](icon.ico)
+![Logo del Proyecto](main/icon.ico)
 
 **Creado por:** Thiago Valentín Stilo Limarino  
 **Fecha de Creación:** 2/1/2025  
+**Fecha de lanzamiento:** 11/1/2025
 **Versión Actual:** 1.0.0 (ALPHA)  
 
 ---
@@ -32,19 +33,20 @@ Melina Streak TikTok Bot es una herramienta automática desarrollada en Python p
 ## 📄 Instalación y Configuración
 1. **Descargar repositorio**
 
-3. **Instalar las dependencias**
+3. **Instalar las dependencias (instrucciones en el archivo [INSTRUCCIONES.txt](INSTRUCCIONES.txt))**
    ```bash
-   pip install -r requirements.txt
+   pip install -r main/ins.files/requirements.txt
    ```
+   o abra `install.py`
 
 4. **Crear el perfil de Chrome**
-   - Abre Chrome y crea un nuevo perfil.
+   - Abre Chrome y crea un nuevo perfil o usa uno existente.
    - Inicia sesión en TikTok al menos una vez con tu cuenta principal.
 
-5. **Configurar el archivo `config.py`**
-   - Abre el archivo `config.py` y configura el nombre del perfil de Chrome y otros parámetros según tus necesidades.
+5. **Configurar el archivo `Config`**
+   - Abre el archivo `Config` y configura el nombre del perfil de Chrome y otros parámetros según tus necesidades.
 
-6. **Crear archivos de usuarios en la carpeta `USERS` (puedes hacerlo con `config.py`)**
+6. **Crear archivos de usuarios en la carpeta `main/src/USERS` (puedes hacerlo con `Config`)**
    - Crea un archivo de texto con el nombre del contacto objetivo, por ejemplo, `STILO.txt`.
    - Dentro del archivo, escribe el nombre exacto del usuario en TikTok (por ejemplo, `Stilo`).
 
@@ -52,9 +54,9 @@ Melina Streak TikTok Bot es una herramienta automática desarrollada en Python p
 
 ## 💡 Uso
 1. **Ejecutar el bot**
-   - Abre `start.bat`
-3. Selecciona el usuario objetivo desde el menú.
-4. El bot enviará automáticamente un mensaje a la hora programada.
+   - Abre `Start`
+2. Selecciona el usuario objetivo desde el menú.
+3. El bot enviará automáticamente un mensaje a la hora programada.
 
 ---
 
@@ -75,18 +77,22 @@ Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 ---
 
 ## 🎉 Changelog
-### 1.0.0 (4/1/2025)
+### 1.0.0 ALPHA (11/1/2025)
+- Lanzamiento
 - Primera versión ALPHA.
-- Funcionalidad básica implementada:
-  - Automatización de mensajes diarios.
-  - Soporte para múltiples usuarios.
-  - Configuración inicial de perfiles de Chrome.
 
 ---
 
 ## 🔗 Recursos
 - [Documentación oficial de Selenium](https://www.selenium.dev/documentation)
 - [Versiones oficiales de Melina STB](https://www.github.com/thiagostilo2121/Melina-Streak-TikTok-Bot/releases)
+
+---
+
+## ⚠️ Advertencia
+Este programa se encuentra en su versión ALPHA, por lo tanto, se encuentra sujeto a constantes cambios. También contiene errores o bugs que serán solucionados en cada actualización.
+
+Le pido disculpas por el largo y tedioso proceso de instalación y configuración manual del programa (cual se especifica en [INSTRUCCIONES.txt](INSTRUCCIONES.txt)) que es debido a que: 1. Deseo procurar la seguridad del usuario para que no crea que su cuenta de TikTok es vulnerada 2. El programa NO puede iniciar sesión en cuentas de TikTok debido a la verificación solicitada por la plataforma. A pesar de esto, trataré de mejorar el proceso de instalación y configuración en el futuro.
 
 ---
 

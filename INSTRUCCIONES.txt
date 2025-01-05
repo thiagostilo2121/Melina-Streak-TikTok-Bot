@@ -1,0 +1,37 @@
+BIENVENIDO! TE SALUDA EL CREADOR Y DESARROLLADOR DE "MELINA STREAK TIKTOK BOT"
+@thiagostilo2121 - GitHub
+@stilo.tvl - Instagram
+
+Antes que nada, quiero avisarte que este programa está en su versión ALPHA y, por lo tanto, está sujeto a cambios constantes y probables errores o bugs que serán solucionados con el tiempo. También, te pido disculpas por el largo y tedioso proceso de instalación y configuración manual del programa (cual se especificará debajo) que es debido a que: 1. Deseo procurar la seguridad del usuario para que no crea que su cuenta de TikTok es vulnerada 2. El programa NO puede iniciar sesión en cuentas de TikTok debido a la verificación solicitada por la plataforma. A pesar de esto, trataré de mejorar el proceso de instalación y configuración en el futuro.
+
+1 - PROCESO DE INSTALACIÓN Y CONFIGURACIÓN
+---------------------------------------------
+
+1. Descargue el programa desde el repositorio de GitHub y abra el archivo install.py.
+
+2. Abra Google Chrome, cree un nuevo perfil (o puede utilizar uno ya existente) e inicie sesión con su TikTok al menos una vez.
+
+3. Abra el archivo Config.lnk (o simplemente Config) y seleccione la primer opción.
+
+4. Ingrese el nombre EXACTO* (incluidas las mayúsculas, minúsculas y demás caracteres) del perfil de Google Chrome.
+
+5. Ingrese el nombre EXACTO* del usuario de Windows que aloja el perfil de Google Chrome.
+
+6. Vuelva a abrir el archivo Config.
+
+7. Ingrese en la segunda opción e indique el horario en formato 24hs (xx:xx) al cual se enviará el mensaje automático.
+
+8. (PASO 6 E INGRESAR 3ER OPCIÓN) Ingrese el nombre que desee darle el archivo con el cual usted identificará a un usuario objetivo y luego ingrese el nombre EXACTO* que tiene el usuario objetivo en TikTok para que el programa logre identificarlo.
+
+9. (PASO 6 E INGRESAR 4TA OPCIÓN) Ingrese el mensaje que desea enviar al usuario objetivo.
+
+10. USTED A FINALIZADO EL PROCESO DE INSTALACIÓN Y CONFIGURACIÓN DE "MELINA STREAK TIKTOK BOT". A continuación se especificarán algunos problemas que puede afrontar y como solucionarlos.
+
+* Incluya mayúsculas, minúsculas y demás caracteres que se encuentren en el nombre del perfil.
+
+2 - POSIBLES PROBLEMAS Y SUS SOLUCIONES
+---------------------------------------------
+
+1. "No se encontró la conversación con el usuario especificado." Esto se puede deber a que ha especificado erróneamente el nombre del usuario objetivo o también porque no se encuentra en su bandeja de mensajes principal. Si el problema es este, envíele un mensaje al usuario objetivo e inténtelo otra vez.
+
+Muchas gracias por utilizar mi programa. Prometo mejorarlo en el futuro.
