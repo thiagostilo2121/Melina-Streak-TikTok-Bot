@@ -3,6 +3,7 @@ import os
 os.system("pip install -r main/ins.files/requiretements.txt")
 
 import win32com.client
+import localDataBaseFolder as db
 
 def sys(command): os.system(command)
 
