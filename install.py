@@ -12,6 +12,8 @@ script_dir = os.path.dirname(os.path.abspath(__file__))
 sys("echo Installing...")
 sys("echo V = 1.0.0a")
 
+db.findDataCreate("main/src/USERS")
+
 shortcut_main = shell.CreateShortcut(os.path.join(script_dir, "Start.lnk"))
 shortcut_main.TargetPath = os.path.join(f"{script_dir}\\main\\ins.files", "start.bat")
 shortcut_main.IconLocation = os.path.join(f"{script_dir}\\main", "icon.ico")
