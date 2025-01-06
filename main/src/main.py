@@ -15,7 +15,7 @@ options = webdriver.ChromeOptions()
 def cls(): os.system("cls")
 cls()
 os.system("cd main/src")
-json_pref = "preferences.json"
+json_pref = "main/src/preferences.json"
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
 users_folder = os.path.join(script_dir, "USERS")
