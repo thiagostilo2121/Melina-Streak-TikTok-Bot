@@ -14,7 +14,7 @@ options = webdriver.ChromeOptions()
 # Configuración para usar el perfil de Chrome de "BOT"
 def cls(): os.system("cls")
 cls()
-
+os.system("cd main/src")
 json_pref = "preferences.json"
 
 script_dir = os.path.dirname(os.path.abspath(__file__))
