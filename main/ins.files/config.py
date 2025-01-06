@@ -23,7 +23,7 @@ def option3():
     nfile = input("Establece un nombre al archivo: ")
     uname = input("Introduce el nombre de TikTok EXACTO del usuario objetivo: ")
     db.createChase("main/src/USERS", nfile)
-    with open(f"main/src/USERS/{nfile}.txt", "w") as local:
+    with open(f"main/src/USERS/{nfile}.txt", "w", enconding="utf-8") as local:
         local.write(uname)
 def option4():
     message = input("Establece un mensaje automático: ")
