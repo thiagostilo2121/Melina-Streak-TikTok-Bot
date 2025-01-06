@@ -6,7 +6,7 @@
 **Fecha de Creación:** 2/1/2025  
 **Fecha de lanzamiento:** 11/1/2025   
 **Versión Actual:** 1.0.0 (ALPHA)   
-**Redes Sociales:** [Twitter/X](x.com/melina_stbot)   
+**Redes Sociales:** [Twitter/X](https://x.com/melina_stbot)   
 
 ---
 
