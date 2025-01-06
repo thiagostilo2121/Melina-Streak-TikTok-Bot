@@ -1,5 +1,6 @@
 import json
 import localDataBaseFolder as db
+import time
 print("=== MELINA STREAK TIKTOK BOT V1.0.0 [ALPHA] ===\n\nEl programa se encuentra en su versión ALPHA, está sujeto a constantes cambios y puede contener errores o bugs.\n\n")
 
 print("[1] Cambiar nombre de perfil Chrome o Windows establecido\n[2] Horario de envio\n[3] Agregar usuario objetivo\n[4] Establecer mensaje automático\n[0] Salir")
@@ -23,6 +24,7 @@ def option3():
     nfile = input("Establece un nombre al archivo: ")
     uname = input("Introduce el nombre de TikTok EXACTO del usuario objetivo: ")
     db.createChase("main/src/USERS", nfile)
+    time.sleep(0.5)
     db.setChase("main/src/USERS", nfile, uname, "w")
 def option4():
     message = input("Establece un mensaje automático: ")
