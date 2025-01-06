@@ -4,8 +4,9 @@
 
 **Creado por:** Thiago Valentín Stilo Limarino  
 **Fecha de Creación:** 2/1/2025  
-**Fecha de lanzamiento:** 11/1/2025
-**Versión Actual:** 1.0.0 (ALPHA)  
+**Fecha de lanzamiento:** 11/1/2025   
+**Versión Actual:** 1.0.0 (ALPHA)   
+**Redes Sociales:** [Twitter/X](x.com/melina_stbot)   
 
 ---
 
