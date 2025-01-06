@@ -16,7 +16,7 @@ sys("echo V = 1.0.0a")
 db.findDataCreate("main/src/USERS")
 
 shortcut_main = shell.CreateShortcut(os.path.join(script_dir, "Start.lnk"))
-shortcut_main.TargetPath = os.path.join(f"{script_dir}\\main\\ins.files", "start.bat")
+shortcut_main.TargetPath = os.path.join(f"{script_dir}\\main\\src", "main.py")
 shortcut_main.IconLocation = os.path.join(f"{script_dir}\\main", "icon.ico")
 shortcut_main.Save()
 
