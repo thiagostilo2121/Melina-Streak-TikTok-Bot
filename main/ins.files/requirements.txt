@@ -1,7 +1,6 @@
 selenium
 localDataBase
-json
-stiloVersionCompiler
 pyperclip
 pywin32
-os
+webdriver_manager
+schedule
