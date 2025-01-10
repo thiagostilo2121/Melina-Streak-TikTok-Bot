@@ -8,9 +8,9 @@ with open("main/src/preferences.json", "r", encoding="utf-8") as file_json:
     datos = json.load(file_json)
 
 def option1():
-    cname = input("Pon el nombre EXACTO de la cuenta de Google Chrome: ")
+    cname = input("Pon el nombre que deseas darle a la cuenta de Google Chrome: ")
     datos["cname"] = cname
-    wuser = input("Pon el nombre EXACTO de la cuenta de Windows donde se encuentra la cuenta de Google Chrome: ")
+    wuser = input("Pon el nombre EXACTO de la cuenta de Windows donde se encuentra la carpeta de Google Chrome: ")
     datos["wuser"] = wuser
     with open("main/src/preferences.json", "w", encoding="utf-8") as file_json:
         json.dump(datos, file_json, indent=4, ensure_ascii=False)
