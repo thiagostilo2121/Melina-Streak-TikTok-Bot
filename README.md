@@ -34,20 +34,20 @@ Melina Streak TikTok Bot es una herramienta automática desarrollada en Python p
 ## 📄 Instalación y Configuración
 1. **Descargar repositorio**
 
-3. **Instalar las dependencias (instrucciones en el archivo [INSTRUCCIONES.txt](INSTRUCCIONES.txt))**
+2. **Instalar las dependencias (instrucciones en el archivo [INSTRUCCIONES.txt](INSTRUCCIONES.txt))**
    ```bash
    pip install -r main/ins.files/requirements.txt
    ```
    o abra `install.py`
 
-4. **Crear el perfil de Chrome**
-   - Abre Chrome y crea un nuevo perfil o usa uno existente.
-   - Inicia sesión en TikTok al menos una vez con tu cuenta principal.
-
-5. **Configurar el archivo `Config`**
+3. **Configurar el archivo `Config`**
    - Abre el archivo `Config` y configura el nombre del perfil de Chrome y otros parámetros según tus necesidades.
 
-6. **Crear archivos de usuarios en la carpeta `main/src/USERS` (puedes hacerlo con `Config`)**
+4. **Configurar el perfil de Chrome**
+   - Abra el programa.
+   - Inicia sesión en TikTok al menos una vez con tu cuenta principal.
+
+5. **Crear archivos de usuarios en la carpeta `main/src/USERS` (puedes hacerlo con `Config`)**
    - Crea un archivo de texto con el nombre del contacto objetivo, por ejemplo, `STILO.txt`.
    - Dentro del archivo, escribe el nombre exacto del usuario en TikTok (por ejemplo, `Stilo`).
 
