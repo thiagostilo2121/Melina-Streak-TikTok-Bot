@@ -1,6 +1,6 @@
 import os
 
-os.system("pip install -r main/ins.files/requiretements.txt")
+os.system("pip install -r main/ins.files/requirements.txt")
 
 import win32com.client
 import localDataBaseFolder as db
