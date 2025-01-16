@@ -2,7 +2,7 @@
 
 ## Español
 
-![Logo del Proyecto](icon.ico)
+![Logo del Proyecto](main/icon.ico)
 
 **Creado por:** Thiago Valentín Stilo Limarino  
 **Fecha de Creación:** 2/1/2025  
@@ -106,7 +106,7 @@ Creado con pasión por Thiago Valentín Stilo Limarino. Las pruebas del programa
 
 ## English
 
-![Project Logo](icon.ico)
+![Project Logo](main/icon.ico)
 
 **Created by:** Thiago Valentín Stilo Limarino  
 **Creation Date:** 2/1/2025  
