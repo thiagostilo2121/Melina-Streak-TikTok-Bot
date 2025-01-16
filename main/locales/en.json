@@ -1,0 +1,23 @@
+{
+    "menu_title": "\n\n=== MELINA STREAK TIKTOK BOT {version} ===\n\nThe program is in its ALPHA version, subject to constant changes and may contain errors or bugs.\n\n",
+    "menu_options": "[1] Change Chrome or Windows profile name\n[2] Set sending schedule\n[3] Add target user\n[4] Set automatic message\n[5] Change lenguage\n[0] Exit",
+    "invalid_option": "Invalid option.",
+    "action_successful": "The action was performed  (If you changed the language, close and open again this file)",
+    "chrome_account_name": "Enter the name you want to give to the Google Chrome account: ",
+    "windows_account_name": "Enter the EXACT name of the Windows account where the Google Chrome folder is located: ",
+    "send_schedule": "Enter the sending time in 24-hour format (00:00): ",
+    "file_name": "Set a name for the file: ",
+    "tiktok_user": "Enter the EXACT TikTok username of the target user: ",
+    "auto_message": "Set an automatic message: ",
+    "choose_language": "Choose your language: ",
+    "option": "Option: ",
+    "no_users_found": "No user files found in the USERS folder. Please create at least one file.",
+    "select_target": "Select a target:",
+    "input_option": "Enter the option number: ",
+    "message_scheduled": "The message will be sent to the selected user at {hour}.",
+    "sending_message": "Starting message sending process...",
+    "user_not_found": "Conversation with the specified user was not found.",
+    "message_sent": "Message sent successfully.",
+    "error_occurred": "An error occurred: {error}",
+    "scheduler_started": "Scheduler started. Waiting for the scheduled time..."
+}

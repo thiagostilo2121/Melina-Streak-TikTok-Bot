@@ -1,4 +1,5 @@
 import os
+import json
 
 os.system("pip install -r main/ins.files/requirements.txt")
 
@@ -10,8 +11,12 @@ def sys(command): os.system(command)
 shell = win32com.client.Dispatch("WScript.shell")
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
+with open("main/src/config/app.json", "r", encoding="utf-8") as file_json:
+    datosapp = json.load(file_json)
+    version = datosapp["version"]
+
 sys("echo Installing...")
-sys("echo V = 1.0.0a")
+sys(f"echo V = {version}")
 
 db.findDataCreate("main/src/USERS")
 

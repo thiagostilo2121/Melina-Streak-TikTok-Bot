@@ -1,0 +1,42 @@
+WELCOME! GREETINGS FROM THE CREATOR AND DEVELOPER OF "MELINA STREAK TIKTOK BOT"
+@thiagostilo2121 - GitHub
+@stilo.tvl - Instagram
+
+First of all, I want to inform you that this program is in its ALPHA version, which means it is subject to constant changes and possible bugs that will be fixed over time. I also apologize for the lengthy and tedious manual installation and configuration process (outlined below). This is due to:  
+1. Ensuring user security so you don't feel your TikTok account is compromised.  
+2. The program CANNOT log in to TikTok accounts because of the platform's verification process.  
+
+Despite this, I will strive to improve the installation and configuration process in the future.
+
+1 - INSTALLATION AND CONFIGURATION PROCESS
+-------------------------------------------
+
+1. Download the program from the GitHub repository and open the `install.py` file.
+
+2. Open the `Config.lnk` (or just `Config`) file and select the first option.
+
+3. Enter the EXACT* name (including uppercase, lowercase, and other characters) you want to assign to the Google Chrome profile to be used.
+
+4. Enter the EXACT* name of the Windows user that hosts the Google Chrome profile.
+
+5. Reopen the `Config` file.
+
+6. Select the second option and specify the time in 24-hour format (xx:xx) for the automatic message to be sent.
+
+7. (STEP 6, THEN SELECT 3RD OPTION) Enter the name you want to give the file used to identify a target user, followed by the EXACT* name of the target user on TikTok so the program can recognize them.
+
+8. (STEP 6, THEN SELECT 4TH OPTION) Enter the message you want to send to the target user.
+
+9. Open the `Start` file and log in to TikTok at least once (you won't need to do this again after the first login).
+
+10. CONGRATULATIONS! YOU HAVE COMPLETED THE INSTALLATION AND CONFIGURATION PROCESS FOR "MELINA STREAK TIKTOK BOT." Below, you'll find solutions to common issues you may encounter.
+
+* Include uppercase, lowercase, and any other special characters in the profile name.
+
+2 - POSSIBLE ISSUES AND SOLUTIONS
+---------------------------------
+
+1. "The conversation with the specified user was not found."  
+   This might happen if you've entered the target user's name incorrectly or if the user is not in your primary message inbox. To resolve this, send a message to the target user and try again.
+
+Thank you for using my program. I promise to improve it in the future!
