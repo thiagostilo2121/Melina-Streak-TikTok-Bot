@@ -20,5 +20,7 @@
     "user_not_found": "No se encontró la conversación con el usuario especificado.",
     "message_sent": "Mensaje enviado correctamente.",
     "error_occurred": "Ocurrió un error: {error}",
-    "scheduler_started": "Programador iniciado. Esperando la hora programada..."
+    "scheduler_started": "Programador iniciado. Esperando la hora programada...",
+    "no_preferences_found": "No se encontraron las preferencias.",
+    "error_reading_preferences_file": "Error al leer el archivo de preferencias."
 }

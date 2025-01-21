@@ -2,7 +2,7 @@ BIENVENIDO! TE SALUDA EL CREADOR Y DESARROLLADOR DE "MELINA STREAK TIKTOK BOT"
 @thiagostilo2121 - GitHub
 @stilo.tvl - Instagram
 
-Antes que nada, quiero avisarte que este programa está en su versión ALPHA y, por lo tanto, está sujeto a cambios constantes y probables errores o bugs que serán solucionados con el tiempo. También, te pido disculpas por el largo y tedioso proceso de instalación y configuración manual del programa (cual se especificará debajo) que es debido a que: 1. Deseo procurar la seguridad del usuario para que no crea que su cuenta de TikTok es vulnerada 2. El programa NO puede iniciar sesión en cuentas de TikTok debido a la verificación solicitada por la plataforma. A pesar de esto, trataré de mejorar el proceso de instalación y configuración en el futuro.
+Antes que nada, quiero avisarte que este programa es relativamente nuevo y, por lo tanto, está sujeto a cambios constantes y probables errores o bugs que serán solucionados con el tiempo. También, te pido disculpas por el largo y tedioso proceso de instalación y configuración manual del programa (cual se especificará debajo) que es debido a que: 1. Deseo procurar la seguridad del usuario para que no crea que su cuenta de TikTok es vulnerada 2. El programa NO puede iniciar sesión en cuentas de TikTok debido a la verificación solicitada por la plataforma. A pesar de esto, trataré de mejorar el proceso de instalación y configuración en el futuro.
 
 1 - PROCESO DE INSTALACIÓN Y CONFIGURACIÓN
 ---------------------------------------------

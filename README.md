@@ -7,7 +7,7 @@
 **Creado por:** Thiago Valentín Stilo Limarino  
 **Fecha de Creación:** 2/1/2025  
 **Fecha de lanzamiento:** 11/1/2025   
-**Versión Actual:** 1.1.0 (ALPHA)   
+**Versión Actual:** 1.1.1   
 **Redes Sociales:** [Twitter/X](https://x.com/melina_stbot)   
 
 ---
@@ -36,7 +36,7 @@ Melina Streak TikTok Bot es una herramienta automática desarrollada en Python p
 ## 📄 Instalación y Configuración
 1. **Descargar repositorio**
 
-2. **Instalar las dependencias (instrucciones en el archivo [INSTRUCCIONES.txt](../INSTRUCCIONES.txt))**
+2. **Instalar las dependencias (instrucciones en el archivo [INSTRUCCIONES.txt](INSTRUCCIONES.txt))**
    ```bash
    pip install -r main/ins.files/requirements.txt
    ```
@@ -80,24 +80,28 @@ Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 ---
 
 ## 🎉 Changelog
-### 1.1.0 ALPHA (16/1/2025)
-- (Error en Config arreglado) El archivo Config ya no se cierra.
-- Soporte multilenguaje.
-- Idioma inglés agregado.
-- Segunda versión ALPHA.
+### 1.1.1 (21/1/2025)
+- Errores menores arreglados.
+- Se agregó el texto en color y en negrita.
+- Se mejoró el manejo de excepciones.
+- Se actualizó el archivo de instalación.
+- Se actualizó el archivo de configuración.
+- Se actualizó el archivo de arranque.
 
 ---
 
 ## 🔗 Recursos
 - [Documentación oficial de Selenium](https://www.selenium.dev/documentation)
 - [Versiones oficiales de Melina STB](https://www.github.com/thiagostilo2121/Melina-Streak-TikTok-Bot/releases)
+- [LICENCIA](doc/LICENSE)
+- [Codigo de conducta](doc/CODE-OF-CONDUCT.md)
 
 ---
 
 ## ⚠️ Advertencia
-Este programa se encuentra en su versión ALPHA, por lo tanto, se encuentra sujeto a constantes cambios. También contiene errores o bugs que serán solucionados en cada actualización.
+Este programa es relativamente nuevo y, por lo tanto, se encuentra sujeto a constantes cambios. También contiene errores o bugs que serán solucionados en cada actualización.
 
-Le pido disculpas por el largo y tedioso proceso de instalación y configuración manual del programa (cual se especifica en [INSTRUCCIONES.txt](../INSTRUCCIONES.txt)) que es debido a que: 1. Deseo procurar la seguridad del usuario para que no crea que su cuenta de TikTok es vulnerada 2. El programa NO puede iniciar sesión en cuentas de TikTok debido a la verificación solicitada por la plataforma. A pesar de esto, trataré de mejorar el proceso de instalación y configuración en el futuro.
+Le pido disculpas por el largo y tedioso proceso de instalación y configuración manual del programa (cual se especifica en [INSTRUCCIONES.txt](INSTRUCCIONES.txt)) que es debido a que: 1. Deseo procurar la seguridad del usuario para que no crea que su cuenta de TikTok es vulnerada 2. El programa NO puede iniciar sesión en cuentas de TikTok debido a la verificación solicitada por la plataforma. A pesar de esto, trataré de mejorar el proceso de instalación y configuración en el futuro.
 
 ---
 
@@ -111,7 +115,7 @@ Creado con pasión por Thiago Valentín Stilo Limarino. Las pruebas del programa
 **Created by:** Thiago Valentín Stilo Limarino  
 **Creation Date:** 2/1/2025  
 **Release Date:** 11/1/2025  
-**Current Version:** 1.1.0 (ALPHA)  
+**Current Version:** 1.1.1  
 **Social Media:** [Twitter/X](https://x.com/melina_stbot)   
 
 ---
@@ -140,7 +144,7 @@ Melina Streak TikTok Bot is an automated tool developed in Python to maintain yo
 ## 📄 Installation and Configuration
 1. **Download the repository**
 
-2. **Install the dependencies (instructions in the [INSTRUCTIONS.txt](../INSTRUCTIONS.txt) file)**
+2. **Install the dependencies (instructions in the [INSTRUCTIONS.txt](INSTRUCTIONS.txt) file)**
    ```bash
    pip install -r main/ins.files/requirements.txt
    ```
@@ -179,29 +183,33 @@ If you'd like to contribute to the development of this project:
 ---
 
 ## 🔧 License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the [MIT License](doc/LICENSE).
 
 ---
 
 ## 🎉 Changelog
-### 1.1.0 ALPHA (16/1/2025)
-- (Config error fixed) The Config file no longer closes unexpectedly.
-- Multilingual support added.
-- English language added.
-- Second ALPHA version.
+### 1.1.1 (21/1/2025)
+- Minor bugs fixed.
+- Added text with color and bold formatting.
+- Improved exception handling.
+- Updated installation file.
+- Updated configuration file.
+- Updated startup file.
 
 ---
 
 ## 🔗 Resources
 - [Official Selenium Documentation](https://www.selenium.dev/documentation)
 - [Official Melina STB Releases](https://www.github.com/thiagostilo2121/Melina-Streak-TikTok-Bot/releases)
+- [LICENCE](doc/LICENSE)
+- [Code of conduct](doc/CODE-OF-CONDUCT.md)
 
 ---
 
 ## ⚠️ Warning
-This program is in its ALPHA version and is subject to constant changes. It may contain errors or bugs that will be fixed with each update.
+This program is new and is subject to constant changes. It may contain errors or bugs that will be fixed with each update.
 
-I apologize for the lengthy and tedious manual installation and configuration process (outlined in [INSTRUCTIONS.txt](../INSTRUCTIONS.txt)), as it is intended to:  
+I apologize for the lengthy and tedious manual installation and configuration process (outlined in [INSTRUCTIONS.txt](INSTRUCTIONS.txt)), as it is intended to:  
 1. Ensure user security so that they do not feel their TikTok account is compromised.  
 2. The program CANNOT log into TikTok accounts due to the verification requested by the platform.  
 
