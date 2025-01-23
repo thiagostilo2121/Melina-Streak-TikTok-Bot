@@ -1,6 +1,7 @@
 {
-    "menu_title": "\n\n=== MELINA STREAK TIKTOK BOT {version} ===\n\nEl programa se encuentra en su versión ALPHA, está sujeto a constantes cambios y puede contener errores o bugs.\n\n",
-    "menu_options": "[1] Cambiar nombre de perfil Chrome o Windows establecido\n[2] Horario de envío\n[3] Agregar usuario objetivo\n[4] Establecer mensaje automático\n[5] Cambiar idioma\n[0] Salir",
+    "menu_title": "\n\n=== MELINA STREAK TIKTOK BOT {version} ===\n\nEl programa se encuentra en su versión ALPHA, está sujeto a constantes cambios y puede contener errores o bugs.\n",
+    "exit": "Salir",
+    "back": "Volver",
     "invalid_option": "Opción no válida.",
     "action_successful": "Se realizó la acción (Si usted ha cambiado el idioma, cierre y abra nuevamente este archivo)",
     "chrome_account_name": "Pon el nombre que deseas darle a la cuenta de Google Chrome: ",
@@ -22,5 +23,14 @@
     "error_occurred": "Ocurrió un error: {error}",
     "scheduler_started": "Programador iniciado. Esperando la hora programada...",
     "no_preferences_found": "No se encontraron las preferencias.",
-    "error_reading_preferences_file": "Error al leer el archivo de preferencias."
+    "error_reading_preferences_file": "Error al leer el archivo de preferencias.",
+    "warning": "Advertencia",
+    "configure_bot": "Configurar BOT",
+    "configure_program": "Configurar programa",
+    "background_browser_advice": "Si no has iniciado sesión al menos una vez en tu TikTok con el perfil de Chrome proporcionado, el programa no funcionará correctamente en segundo plano",
+    "empty_preferences_error": "Faltan uno o más argumentos de configuración (configure correctamente el programa)",
+    "background_yes": "Poner webdriver en segundo plano",
+    "background_no": "Poner webdriver en primer plano",
+    "bot_config_menu": "\n[1] Establecer nombre de perfil de Chrome o Windows\n[2] Establecer horario de envío\n[3] Añadir usuario objetivo\n[4] Establecer mensaje automático\n[0] Volver\n",
+    "program_config_menu": "\n[1] Establecer idioma\n[2] Establecer plano de webdriver\n[0] Volver\n"
 }

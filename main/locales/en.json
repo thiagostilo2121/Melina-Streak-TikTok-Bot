@@ -1,7 +1,8 @@
 {
     "menu_title": "\n\n=== MELINA STREAK TIKTOK BOT {version} ===\n\nThe program is in its ALPHA version, subject to constant changes and may contain errors or bugs.\n\n",
-    "menu_options": "[1] Change Chrome or Windows profile name\n[2] Set sending schedule\n[3] Add target user\n[4] Set automatic message\n[5] Change lenguage\n[0] Exit",
     "invalid_option": "Invalid option.",
+    "exit": "Exit",
+    "back": "Back",
     "action_successful": "The action was performed  (If you changed the language, close and open again this file)",
     "chrome_account_name": "Enter the name you want to give to the Google Chrome account: ",
     "windows_account_name": "Enter the EXACT name of the Windows account where the Google Chrome folder is located: ",
@@ -21,5 +22,15 @@
     "error_occurred": "An error occurred: {error}",
     "scheduler_started": "Scheduler started. Waiting for the scheduled time...",
     "no_preferences_found": "No preferences found.",
-    "error_reading_preferences_file": "Error reading preferences file."
+    "error_reading_preferences_file": "Error reading preferences file.",
+    "warning": "Warning",
+    "configure_bot": "Configure BOT",
+    "configure_program": "Configure program",
+    "background_browser_advice": "If you haven't logged into your TikTok account at least once using the provided Chrome profile, the program won't work correctly in the background.",
+    "empty_preferences_error": "One or more configuration arguments are missing (please configure the program correctly)",
+    "background_yes": "Run webdriver in the background",
+    "background_no": "Run webdriver in the foreground",
+    "bot_config_menu": "\n[1] Set Chrome or Windows profile name\n[2] Set sending schedule\n[3] Add target user\n[4] Set automatic message\n[0] Back\n",
+    "program_config_menu": "\n[1] Set language\n[2] Set webdriver mode\n[0] Back\n"
+
 }

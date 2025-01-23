@@ -3,5 +3,6 @@
     "hour": "",
     "message": "",
     "wuser": "",
-    "language": ""
+    "language": "",
+    "headless": false
 }

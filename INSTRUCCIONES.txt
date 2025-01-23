@@ -9,7 +9,7 @@ Antes que nada, quiero avisarte que este programa es relativamente nuevo y, por 
 
 1. Descargue el programa desde el repositorio de GitHub y abra el archivo install.py.
 
-2. Abra el archivo Config.lnk (o simplemente Config) y seleccione la primer opción.
+2. Abra el archivo Config.lnk (o simplemente Config), seleccione la primer opción y luego nuevamente la primer opción.
 
 3. Ingrese el nombre EXACTO* (incluidas las mayúsculas, minúsculas y demás caracteres) que desea darle al perfil de Google Chrome que será utilizado.
 
@@ -17,7 +17,7 @@ Antes que nada, quiero avisarte que este programa es relativamente nuevo y, por 
 
 5. Vuelva a abrir el archivo Config.
 
-6. Ingrese en la segunda opción e indique el horario en formato 24hs (xx:xx) al cual se enviará el mensaje automático.
+6. Ingrese en la primer y luego segunda opción e indique el horario en formato 24hs (xx:xx) al cual se enviará el mensaje automático.
 
 7. (PASO 6 E INGRESAR 3ER OPCIÓN) Ingrese el nombre que desee darle el archivo con el cual usted identificará a un usuario objetivo y luego ingrese el nombre EXACTO* que tiene el usuario objetivo en TikTok para que el programa logre identificarlo.
 

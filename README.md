@@ -7,7 +7,7 @@
 **Creado por:** Thiago Valentín Stilo Limarino  
 **Fecha de Creación:** 2/1/2025  
 **Fecha de lanzamiento:** 11/1/2025   
-**Versión Actual:** 1.1.1   
+**Versión Actual:** 1.2.0   
 **Redes Sociales:** [Twitter/X](https://x.com/melina_stbot)   
 
 ---
@@ -22,6 +22,7 @@ Melina Streak TikTok Bot es una herramienta automática desarrollada en Python p
 - • **Configuración personalizable:** Selecciona el contacto y el mensaje a enviar mediante archivos de configuración.
 - • **Compatible con perfiles de Chrome:** Utiliza perfiles personalizados para evitar verificaciones repetitivas al iniciar sesión.
 - • **Soporte múltiple:** Gestiona múltiples contactos usando archivos en la carpeta `USERS`.
+- • **Mejoras en la gestión de errores y excepciones.**
 
 ---
 
@@ -30,17 +31,20 @@ Melina Streak TikTok Bot es una herramienta automática desarrollada en Python p
 2. **Google Chrome instalado.**
 3. **WebDriver de Chrome** (automáticamente gestionado por el bot).
 4. **Sistema operativo compatible:** Windows 10/11.
-
 ---
 
 ## 📄 Instalación y Configuración
 1. **Descargar repositorio**
 
 2. **Instalar las dependencias (instrucciones en el archivo [INSTRUCCIONES.txt](INSTRUCCIONES.txt))**
+   Abra `install.py`
+
+   o ejecute
+
    ```bash
+   cd RUTA/A/LA/CARPETA/DE/MELINASTB
    pip install -r main/ins.files/requirements.txt
    ```
-   o abra `install.py`
 
 3. **Configurar el archivo `Config`**
    - Abre el archivo `Config` y configura el nombre del perfil de Chrome y otros parámetros según tus necesidades.
@@ -50,8 +54,8 @@ Melina Streak TikTok Bot es una herramienta automática desarrollada en Python p
    - Dentro del archivo, escribe el nombre exacto del usuario en TikTok (por ejemplo, `Stilo`).
   
 5. **Configurar el perfil de Chrome**
-   - Abra el programa.
-   - Inicia sesión en TikTok al menos una vez con tu cuenta principal (con iniciar una vez no deberá hacerlo más).
+   - Abra el programa (con el modo primer plano).
+   - Inicia sesión en TikTok al menos una vez con tu cuenta principal (con iniciar una vez no deberá hacerlo más y ya podrá usar el modo segundo plano).
 
 ---
 
@@ -80,12 +84,10 @@ Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 ---
 
 ## 🎉 Changelog
-### 1.1.1 (21/1/2025)
+### 1.2.0 (21/1/2025)
 - Errores menores arreglados.
-- Se agregó el texto en color y en negrita.
-- Se mejoró el manejo de excepciones.
-- Se actualizó el archivo de instalación.
-- Se actualizó el archivo de configuración.
+- Se actualizó la interfaz de Config
+- Se añadió el modo "segundo plano"
 - Se actualizó el archivo de arranque.
 
 ---
@@ -108,28 +110,33 @@ Le pido disculpas por el largo y tedioso proceso de instalación y configuració
 ## 🌟 Créditos
 Creado con pasión por Thiago Valentín Stilo Limarino. Las pruebas del programa fueron llevadas a cabo por el autor y una persona más.
 
+Here is the translated text into English:  
+
+---
+
 ## English
 
 ![Project Logo](main/icon.ico)
 
 **Created by:** Thiago Valentín Stilo Limarino  
-**Creation Date:** 2/1/2025  
-**Release Date:** 11/1/2025  
-**Current Version:** 1.1.1  
+**Creation Date:** 1/2/2025  
+**Release Date:** 1/11/2025  
+**Current Version:** 1.2.0  
 **Social Media:** [Twitter/X](https://x.com/melina_stbot)   
 
 ---
 
 ## 🔄 Introduction
-Melina Streak TikTok Bot is an automated tool developed in Python to maintain your TikTok streak with friends. Designed to be easy to use and highly customizable, this bot runs daily at the time you choose and sends automated messages to selected contacts.
+Melina Streak TikTok Bot is an automated tool developed in Python to maintain streaks of messages with your friends on TikTok. Designed to be user-friendly and highly customizable, this bot runs daily at your chosen time and sends automatic messages to your selected contacts.
 
 ---
 
-## 🔧 Main Features
-- • **Daily Automation:** Sends automated messages every day at a predetermined time.
-- • **Customizable Configuration:** Select the contact and message to send via configuration files.
-- • **Chrome Profile Support:** Uses personalized profiles to avoid repeated logins.
-- • **Multi-contact Support:** Manage multiple contacts using files in the `USERS` folder.
+## 🔧 Key Features
+- • **Daily automation:** Sends automatic messages every day at a pre-set time.
+- • **Customizable configuration:** Select the contact and message to send through configuration files.
+- • **Chrome profile compatibility:** Uses personalized profiles to avoid repetitive login verifications.
+- • **Multiple support:** Manage multiple contacts using files in the `USERS` folder.
+- • **Improved error and exception handling.**
 
 ---
 
@@ -142,37 +149,41 @@ Melina Streak TikTok Bot is an automated tool developed in Python to maintain yo
 ---
 
 ## 📄 Installation and Configuration
-1. **Download the repository**
+1. **Download the repository.**
 
-2. **Install the dependencies (instructions in the [INSTRUCTIONS.txt](INSTRUCTIONS.txt) file)**
+2. **Install dependencies (instructions in the file [INSTRUCTIONS.txt](INSTRUCTIONS.txt))**
+   Open `install.py`
+
+   or execute
+
    ```bash
+   cd PATH/TO/MELINASTB/FOLDER
    pip install -r main/ins.files/requirements.txt
    ```
-   or open `install.py`.
 
-3. **Configure the `Config` file**
+3. **Configure the `Config` file.**
    - Open the `Config` file and set up the Chrome profile name and other parameters as needed.
 
-4. **Create user files in the `main/src/USERS` folder (you can do this with `Config`)**
-   - Create a text file with the name of the target contact, e.g., `STILO.txt`.
-   - Inside the file, write the exact TikTok user name (e.g., `Stilo`).
-
-5. **Configure the Chrome profile**
-   - Open the program.
-   - Log in to TikTok at least once with your main account (after the first login, you won't need to do it again).
+4. **Create user files in the `main/src/USERS` folder (this can be done with `Config`).**
+   - Create a text file named after the target contact, e.g., `STILO.txt`.
+   - Inside the file, write the exact name of the user on TikTok (e.g., `Stilo`).
+  
+5. **Set up the Chrome profile.**
+   - Open the program (make sure you are with the foreground mode activated).
+   - Log in to TikTok at least once with your main account (you won't need to do this again after the first time and now you can use the background mode).
 
 ---
 
 ## 💡 Usage
-1. **Run the bot**
-   - Open `Start`
+1. **Run the bot.**
+   - Open `Start`.
 2. Select the target user from the menu.
 3. The bot will automatically send a message at the scheduled time.
 
 ---
 
-## 🔧 Contribute
-If you'd like to contribute to the development of this project:
+## 🔧 Contributing
+If you’d like to contribute to this project:
 1. Fork the repository.
 2. Create a branch for your changes.
    ```bash
@@ -183,39 +194,33 @@ If you'd like to contribute to the development of this project:
 ---
 
 ## 🔧 License
-This project is licensed under the [MIT License](doc/LICENSE).
+This project is licensed under the [MIT License](LICENSE).
 
 ---
 
 ## 🎉 Changelog
-### 1.1.1 (21/1/2025)
-- Minor bugs fixed.
-- Added text with color and bold formatting.
-- Improved exception handling.
-- Updated installation file.
-- Updated configuration file.
-- Updated startup file.
+### 1.2.0 (1/21/2025)
+- Minor bug fixes.
+- Updated the Config interface.
+- Added "background mode."
+- Updated the startup file.
 
 ---
 
 ## 🔗 Resources
 - [Official Selenium Documentation](https://www.selenium.dev/documentation)
 - [Official Melina STB Releases](https://www.github.com/thiagostilo2121/Melina-Streak-TikTok-Bot/releases)
-- [LICENCE](doc/LICENSE)
-- [Code of conduct](doc/CODE-OF-CONDUCT.md)
+- [LICENSE](doc/LICENSE)
+- [Code of Conduct](doc/CODE-OF-CONDUCT.md)
 
 ---
 
-## ⚠️ Warning
-This program is new and is subject to constant changes. It may contain errors or bugs that will be fixed with each update.
+## ⚠️ Disclaimer
+This program is relatively new and, therefore, subject to constant changes. It also contains bugs or errors that will be fixed in future updates.
 
-I apologize for the lengthy and tedious manual installation and configuration process (outlined in [INSTRUCTIONS.txt](INSTRUCTIONS.txt)), as it is intended to:  
-1. Ensure user security so that they do not feel their TikTok account is compromised.  
-2. The program CANNOT log into TikTok accounts due to the verification requested by the platform.  
-
-Despite this, I will work to improve the installation and configuration process in the future.
+I apologize for the long and tedious manual installation and configuration process (specified in [INSTRUCTIONS.txt](INSTRUCTIONS.txt)), which is due to: 1. Ensuring user security so they do not feel their TikTok account is at risk. 2. The program CANNOT log in to TikTok accounts due to verification required by the platform. Despite this, I will strive to improve the installation and configuration process in the future.
 
 ---
 
 ## 🌟 Credits
-Created with passion by Thiago Valentín Stilo Limarino. The program was tested by the author and one other person.
+Created with passion by Thiago Valentín Stilo Limarino. Program testing was conducted by the author and one other person.

@@ -30,15 +30,84 @@ with open("main/app/config/app.json", "r", encoding="utf-8") as file_json:
     version = datosapp["version"]
 
 menutitle = translations["menu_title"].format(version=version)
-menuad = translations["menu_options"]
 
+# Función para limpiar pantalla
 def cls(): os.system("cls")
 
+# Guardar preferencias
 def save_preferences():
     with open("main/src/preferences.json", "w", encoding="utf-8") as file_json:
         json.dump(datos, file_json, indent=4, ensure_ascii=False)
 
-# Funciones de opciones
+# Funciones de configuración del bot
+def configure_bot():
+    configad = db.setChase("main/src/interface", "configad", "", "w")
+    configadtype = db.setChase("main/src/interface", "configadtype", "", "w")
+    while True:
+        cls()
+        configad = db.readChase("main/src/interface", "configad")
+        configadtype = db.readChase("main/src/interface", "configadtype")
+        if configadtype == "error": 
+            color = "31"
+            prefix = "[ERROR] " 
+        else: 
+            color = "32" 
+            prefix = ""
+        prints.print_colored_bold(prefix + configad, color)
+        print(menutitle + translations["bot_config_menu"])
+        try:
+            choice = int(input(translations["option"]))
+            if choice == 1:
+                option1()
+            elif choice == 2:
+                option2()
+            elif choice == 3:
+                option3()
+            elif choice == 4:
+                option4()
+            elif choice == 0:
+                configad = db.setChase("main/src/interface", "configad", "", "w")
+                configadtype = db.setChase("main/src/interface", "configadtype", "","w")                
+                break
+            else:
+                raise ValueError
+        except ValueError:
+            db.setChase("main/src/interface", "configad", translations["invalid_option"], "w")
+            db.setChase("main/src/interface", "configadtype", "error", "w")
+
+# Funciones de configuración del programa
+def configure_program():
+    configad = db.setChase("main/src/interface", "configad", "", "w")
+    configadtype = db.setChase("main/src/interface", "configadtype", "", "w")
+    while True:
+        cls()
+        configad = db.readChase("main/src/interface", "configad")
+        configadtype = db.readChase("main/src/interface", "configadtype")
+        if configadtype == "error": 
+            color = "31"
+            prefix = "[ERROR] " 
+        else: 
+            color = "32" 
+            prefix = ""
+        prints.print_colored_bold(prefix + configad, color)
+        print(menutitle + translations["program_config_menu"])
+        try:
+            choice = int(input(translations["option"]))
+            if choice == 1:
+                option5()
+            elif choice == 2:
+                option6()
+            elif choice == 0:
+                configad = db.setChase("main/src/interface", "configad", "", "w")
+                configadtype = db.setChase("main/src/interface", "configadtype", "","w")   
+                break
+            else:
+                raise ValueError
+        except ValueError:
+            db.setChase("main/src/interface", "configad", translations["invalid_option"], "w")
+            db.setChase("main/src/interface", "configadtype", "error", "w")
+
+# Funciones de opciones existentes
 def option1():
     cname = input(translations["chrome_account_name"])
     datos["cname"] = cname
@@ -73,16 +142,12 @@ def option4():
 
 def option5():
     global LANG_CODE, translations
-    print("[1] Español (es)\n[2] English (en)")
+    print("[1] Espa\u00f1ol (es)\n[2] English (en)")
     lang_choice = input(translations.get("choose_language", "Choose your language: "))
     if lang_choice == "1" or lang_choice.lower() == "es":
         LANG_CODE = "es"
-        db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
-        db.setChase("main/src/interface", "configadtype", "successful", "w")
     elif lang_choice == "2" or lang_choice.lower() == "en":
         LANG_CODE = "en"
-        db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
-        db.setChase("main/src/interface", "configadtype", "successful", "w")
     else:
         db.setChase("main/src/interface", "configad", translations.get("invalid_option"), "w")
         db.setChase("main/src/interface", "configadtype", "error", "w")
@@ -90,36 +155,64 @@ def option5():
     datos["language"] = LANG_CODE
     translations = load_language(LANG_CODE)
     save_preferences()
+    db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
+    db.setChase("main/src/interface", "configadtype", "successful", "w")
 
-menu = True
+def option6():
+    global datos
+    prints.print_colored_bold(
+                f"\n[{translations.get('warning')}] " +
+                translations.get("background_browser_advice") + "\n",
+                "33"
+    )
+    print("[1] " + translations["background_yes"])
+    print("[2] " + translations["background_no"] + "\n")
+    try:
+        bg_choice = int(input(translations["option"])) 
+        if bg_choice == 1:
+            datos["headless"] = True
+            save_preferences()
+        elif bg_choice == 2:
+            datos["headless"] = False
+            save_preferences()
+        else:
+            raise ValueError
+        db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
+        db.setChase("main/src/interface", "configadtype", "successful", "w")
+    except ValueError:
+        db.setChase("main/src/interface", "configad", translations.get("invalid_option"), "w")
+        db.setChase("main/src/interface", "configadtype", "error", "w")
 
-def loadMenu(): 
-    cls()
-    menutxt = db.readChase("main/src/interface", "configad")
-    menutxttype = db.readChase("main/src/interface", "configadtype")
-    if menutxttype == "error":
-        prints.print_colored_bold(f"[ERROR] {menutxt}", "31")
-    elif menutxttype == "successful":
-        prints.print_colored_bold(menutxt, "32")
-    print(menutitle + menuad)
-    _a = input("\n" + translations["option"])
-    print("\n")
-    return _a
 
 # Menú principal
-while menu: 
+menu = True
+while menu:
+    cls()
+    configad = db.readChase("main/src/interface", "configad")
+    configadtype = db.readChase("main/src/interface", "configadtype")
+    if configadtype == "error": 
+            color = "31"
+            prefix = "[ERROR] " 
+    else: 
+            color = "32" 
+            prefix = ""
+    prints.print_colored_bold(prefix + configad, color)
+    print(menutitle)
+    print("[1]", translations["configure_bot"])
+    print("[2]", translations["configure_program"])
+    print("[0]", translations["exit"], "\n")
     try:
-        choice = int(loadMenu())
-        if choice == 1: option1()
-        elif choice == 2: option2()
-        elif choice == 3: option3()
-        elif choice == 4: option4()
-        elif choice == 5: option5()
-        elif choice == 0: 
+        choice = int(input(translations["option"]))
+        if choice == 1:
+            configure_bot()
+        elif choice == 2:
+            configure_program()
+        elif choice == 0:
             menu = False
             exit()
-        if choice < 0 or choice > 5:
-            raise ValueError
+        else:
+            db.setChase("main/src/interface", "configad", translations["invalid_option"], "w")
+            db.setChase("main/src/interface", "configadtype", "error", "w")
     except ValueError:
         db.setChase("main/src/interface", "configad", translations["invalid_option"], "w")
         db.setChase("main/src/interface", "configadtype", "error", "w")
