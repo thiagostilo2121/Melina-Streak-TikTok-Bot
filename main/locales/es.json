@@ -8,6 +8,8 @@
     "windows_account_name": "Pon el nombre EXACTO de la cuenta de Windows donde se encuentra la carpeta de Google Chrome: ",
     "send_schedule": "Pon la hora en formato 24hs de envío (00:00): ",
     "file_name": "Establece un nombre al archivo: ",
+    "delete_file_name": "Pon el nombre del archivo (sin txt) del usuario objetivo a eliminar: ",
+    "user_file_no_found": "El archivo no fue encontrado",
     "tiktok_user": "Introduce el nombre de TikTok EXACTO del usuario objetivo: ",
     "auto_message": "Establece un mensaje automático: ",
     "change_language": "Cambiar idioma",
@@ -18,7 +20,8 @@
     "input_option": "Ingresa el número de la opción: ",
     "message_scheduled": "Se enviará el mensaje al usuario seleccionado a las {hour}hs.",
     "sending_message": "Iniciando proceso de envío de mensaje...",
-    "user_not_found": "No se encontró la conversación con el usuario especificado.",
+    "user_not_found": "No se encontró la conversación con el usuario especificado `{user}`.",
+    "user_not_found_timeout": "No se encontró la conversación con el usuario especificado `{user}` o se agotó el tiempo de espera.",
     "message_sent": "Mensaje enviado correctamente a {user}.",
     "error_occurred": "Ocurrió un error: {error}",
     "scheduler_started": "Programador iniciado. Esperando la hora programada...",
@@ -31,6 +34,6 @@
     "empty_preferences_error": "Faltan uno o más argumentos de configuración (configure correctamente el programa)",
     "background_yes": "Poner webdriver en segundo plano",
     "background_no": "Poner webdriver en primer plano",
-    "bot_config_menu": "\n[1] Establecer nombre de perfil de Chrome o Windows\n[2] Establecer horario de envío\n[3] Añadir usuario objetivo\n[4] Establecer mensaje automático\n[0] Volver\n",
+    "bot_config_menu": "\n[1] Establecer nombre de perfil de Chrome o Windows\n[2] Establecer horario de envío\n[3] Añadir usuario objetivo\n[4] Establecer mensaje automático\n[5] Eliminar usuario objetivo\n[0] Volver\n",
     "program_config_menu": "\n[1] Establecer idioma\n[2] Establecer plano de webdriver\n[0] Volver\n"
 }

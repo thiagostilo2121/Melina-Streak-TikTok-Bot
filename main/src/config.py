@@ -58,13 +58,15 @@ def configure_bot():
         try:
             choice = int(input(translations["option"]))
             if choice == 1:
-                option1()
+                optionBot1()
             elif choice == 2:
-                option2()
+                optionBot2()
             elif choice == 3:
-                option3()
+                optionBot3()
             elif choice == 4:
-                option4()
+                optionBot4()
+            elif choice == 5:
+                optionBot5()
             elif choice == 0:
                 configad = db.setChase("main/src/interface", "configad", "", "w")
                 configadtype = db.setChase("main/src/interface", "configadtype", "","w")                
@@ -108,7 +110,7 @@ def configure_program():
             db.setChase("main/src/interface", "configadtype", "error", "w")
 
 # Funciones de opciones existentes
-def option1():
+def optionBot1():
     cname = input(translations["chrome_account_name"])
     datos["cname"] = cname
     wuser = input(translations["windows_account_name"])
@@ -117,14 +119,14 @@ def option1():
     db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
     db.setChase("main/src/interface", "configadtype", "successful", "w")
 
-def option2():
+def optionBot2():
     hour = input(translations["send_schedule"])
     datos["hour"] = hour
     save_preferences()
     db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
     db.setChase("main/src/interface", "configadtype", "successful", "w")
 
-def option3():
+def optionBot3():
     nfile = input(translations["file_name"])
     uname = input(translations["tiktok_user"])
     db.createChase("main/src/USERS", nfile)
@@ -133,12 +135,22 @@ def option3():
     db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
     db.setChase("main/src/interface", "configadtype", "successful", "w")
 
-def option4():
+def optionBot4():
     message = input(translations["auto_message"])
     datos["message"] = message
     save_preferences()
     db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
     db.setChase("main/src/interface", "configadtype", "successful", "w")
+
+def optionBot5():
+    del_file = input(translations["delete_file_name"])
+    try:
+        db.removeChase("main/src/USERS", del_file)
+        db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
+        db.setChase("main/src/interface", "configadtype", "successful", "w")
+    except:
+        db.setChase("main/src/interface", "configad", translations.get("user_file_no_found"), "w")
+        db.setChase("main/src/interface", "configadtype", "error", "w")
 
 def option5():
     global LANG_CODE, translations

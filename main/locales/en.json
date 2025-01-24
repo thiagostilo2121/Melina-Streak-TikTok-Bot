@@ -8,6 +8,8 @@
     "windows_account_name": "Enter the EXACT name of the Windows account where the Google Chrome folder is located: ",
     "send_schedule": "Enter the sending time in 24-hour format (00:00): ",
     "file_name": "Set a name for the file: ",
+    "delete_file_name": "Put the file name (without txt) of the objetive user to delete: ",
+    "user_file_no_found": "The file was not found.",
     "tiktok_user": "Enter the EXACT TikTok username of the target user: ",
     "auto_message": "Set an automatic message: ",
     "choose_language": "Choose your language: ",
@@ -17,7 +19,8 @@
     "input_option": "Enter the option number: ",
     "message_scheduled": "The message will be sent to the selected user at {hour}.",
     "sending_message": "Starting message sending process...",
-    "user_not_found": "Conversation with the specified user was not found.",
+    "user_not_found": "Conversation with the specified user `{user}` was not found.",
+    "user_not_found_timeout": "Conversation with the specified user `{user}` was not found or the wait timed out.",
     "message_sent": "Message sent successfully to {user}.",
     "error_occurred": "An error occurred: {error}",
     "scheduler_started": "Scheduler started. Waiting for the scheduled time...",
@@ -30,7 +33,7 @@
     "empty_preferences_error": "One or more configuration arguments are missing (please configure the program correctly)",
     "background_yes": "Run webdriver in the background",
     "background_no": "Run webdriver in the foreground",
-    "bot_config_menu": "\n[1] Set Chrome or Windows profile name\n[2] Set sending schedule\n[3] Add target user\n[4] Set automatic message\n[0] Back\n",
+    "bot_config_menu": "\n[1] Set Chrome or Windows profile name\n[2] Set sending schedule\n[3] Add target user\n[4] Set automatic message\n[5] Delete an objetive user\n[0] Back\n",
     "program_config_menu": "\n[1] Set language\n[2] Set webdriver mode\n[0] Back\n"
 
 }

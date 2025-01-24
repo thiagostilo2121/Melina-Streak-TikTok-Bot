@@ -12,10 +12,12 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.common.exceptions import TimeoutException
 from _cmd.config import prints
 import localDataBaseFolder as db
 
 # Configuración del logger para guardar los logs en un archivo
+db.setChase("main/logs", "index_log", "--- CLEARED ---\n\n", "w")
 LOG_FILE = "main/logs/index_log.txt"
 logging.basicConfig(filename=LOG_FILE, level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
 
@@ -25,8 +27,7 @@ LOCALES_DIR = "main/locales/"
 USERS_DIR = "main/src/USERS/"
 
 # Inicializar base de datos
-db.setChase("main/src/interface", "indexad", "", "w")
-db.setChase("main/src/interface", "indexadtype", "", "w")
+db.setChase("main/src/interface", "indexcls", "False", "w")
 
 # Función para cargar idioma desde un archivo JSON
 def load_language(lang_code):
@@ -66,13 +67,14 @@ def iniciar_sesion(user_windows, cname, headless):
         options.add_argument(
             rf"user-data-dir=C:\\Users\\{user_windows}\\AppData\\Local\\Google\\Chrome\\User Data\\{cname}"
         )
+
+        options.add_argument("--log-level=3")
         
         # Configurar modo headless si está habilitado en las preferencias
         if headless:
             options.add_argument("--headless")
             options.add_argument("--disable-gpu")
             options.add_argument("--window-size=1920,1080")
-            options.add_argument("--log-level=3")
 
         return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
     except Exception as e:
@@ -111,17 +113,24 @@ def enviar_mensaje(user_files, message, headless, driver):
 
         for user_file in user_files:
 
+            indexcls = bool(db.readChase("main/src/interface", "indexcls"))
+
             with open(os.path.join(USERS_DIR, user_file), "r", encoding="utf-8") as file:
                 username = file.read().strip()
 
-            element = WebDriverWait(driver, 20).until(
-                EC.visibility_of_element_located((By.XPATH, f"//p[contains(@class, 'css-2tydh5-PInfoNickname') and text()='{username}']"))
-            )
+            try:
+                element = WebDriverWait(driver, 20).until(
+                    EC.visibility_of_element_located((By.XPATH, f"//p[contains(@class, 'css-2tydh5-PInfoNickname') and text()='{username}']"))
+                )
+            except TimeoutException:
+                prints.print_colored_bold("[ERROR] " + translations["user_not_found_timeout"].format(user=username), "31")
+                continue  # Saltar al siguiente usuario
 
             # Buscar la conversación con el usuario
             conversaciones = driver.find_elements(By.XPATH, f"//p[contains(@class, 'PInfoNickname') and text()='{username}']")
             if not conversaciones:
-                raise Exception(translations["user_not_found"].format(user=username))
+                prints.print_colored_bold("[ERROR] " + translations["user_not_found"].format(user=username), "31")
+                continue
 
             conversaciones[0].click()
 
@@ -139,10 +148,17 @@ def enviar_mensaje(user_files, message, headless, driver):
             campo_mensaje.send_keys(Keys.RETURN)
 
             logging.info(f"Mensaje enviado a {username}")
+
+            if indexcls == False:
+                cls()
+                db.setChase("main/src/interface", "indexcls", "True", "w")
+
             print(translations["message_sent"].format(user=username))
 
         if headless:
             driver.quit()
+        
+        print("\n Proceso de envio de mensaje finalizado.")
 
     except Exception as e:
         logging.error(f"Error al enviar mensaje: {str(e)}")
@@ -153,6 +169,7 @@ def programar_envio(user_files, message: str, hour: str, headless: bool, driver)
     schedule.every().day.at(hour).do(enviar_mensaje, user_files, message, headless, driver)
     logging.info(f"Tarea programada para enviar mensaje a las {hour}")
     print(translations["scheduler_started"])
+    #enviar_mensaje(user_files, message, headless, driver) # <-- For testing
     while True:
         schedule.run_pending()
         time.sleep(1)
