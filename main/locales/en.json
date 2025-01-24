@@ -18,7 +18,7 @@
     "message_scheduled": "The message will be sent to the selected user at {hour}.",
     "sending_message": "Starting message sending process...",
     "user_not_found": "Conversation with the specified user was not found.",
-    "message_sent": "Message sent successfully.",
+    "message_sent": "Message sent successfully to {user}.",
     "error_occurred": "An error occurred: {error}",
     "scheduler_started": "Scheduler started. Waiting for the scheduled time...",
     "no_preferences_found": "No preferences found.",

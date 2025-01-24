@@ -8,6 +8,7 @@ required_version = (3, 10)
 if sys.version_info < required_version:
     print(f"[ERROR] Python {required_version[0]}.{required_version[1]} or better required.")
     print(f"You have Python {sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}.")
+    print("\n>>> To update it, go to https://www.python.org/ <<<")
     time.sleep(5)
     exit(1)
 
@@ -22,7 +23,19 @@ def run_command(command, success_msg=None, error_msg=None):
             print(f"{error_msg}\n{e.stderr}")
         else:
             print(e.stderr)
+        time.sleep(3)
         exit(1)
+
+if os.name != "nt":
+    print("[ERROR] Shortcut creation is only supported on Windows.")
+    time.sleep(3)
+    exit()
+
+if not os.access(os.curdir, os.W_OK):
+    print("[ERROR] Insufficient permissions to write to the installation directory.")
+    time.sleep(3)
+    exit(1)
+
 
 # Install requirements
 requirements_path = "main/ins.files/requirements.txt"
@@ -41,9 +54,18 @@ shell = win32com.client.Dispatch("WScript.shell")
 script_dir = os.path.dirname(os.path.abspath(__file__))
 
 # Load app version
-with open("main/app/config/app.json", "r", encoding="utf-8") as file_json:
-    datosapp = json.load(file_json)
-    version = datosapp["version"]
+try:
+    with open("main/app/config/app.json", "r", encoding="utf-8") as file_json:
+        datosapp = json.load(file_json)
+        version = datosapp["version"]
+except FileNotFoundError:
+    print("[ERROR] Configuration file not found.")
+    time.sleep(3)
+    exit(1)
+except json.JSONDecodeError:
+    print("[ERROR] Configuration file is invalid.")
+    time.sleep(3)
+    exit(1)
 
 # Display installation messages
 print("Installing...")
@@ -51,6 +73,7 @@ print(f"V = {version}")
 
 # Create necessary directories
 db.findDataCreate("main/src/USERS")
+db.findDataCreate("main/logs/")
 
 # Create shortcuts
 shortcut_main = shell.CreateShortcut(os.path.join(script_dir, "Start.lnk"))
