@@ -118,7 +118,7 @@ Here is the translated text into English:
 **Created by:** Thiago Valentín Stilo Limarino  
 **Creation Date:** 1/2/2025  
 **Release Date:** 1/11/2025  
-**Current Version:** 1.3.0 (UNDER DEV)
+**Current Version:** 1.3.0 (UNDER DEV)  
 **Social Media:** [Twitter/X](https://x.com/melina_stbot)   
 
 ---
