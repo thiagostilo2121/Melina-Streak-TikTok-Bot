@@ -15,6 +15,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 - Now you can send messages to all your configured objetive accounts.
 - New exceptions have been added to the `install.py` file.
 - New line "...to update it go to python.org" has been added to the `install.py` file.
+- `install.py` support for Linux added.
 
 ### Changed
 - The `install.py` file has been updated to use the new exceptions and create the `logs` directory.

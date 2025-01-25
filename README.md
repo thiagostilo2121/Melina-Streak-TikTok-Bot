@@ -7,7 +7,7 @@
 **Creado por:** Thiago Valentín Stilo Limarino  
 **Fecha de Creación:** 2/1/2025  
 **Fecha de lanzamiento:** 11/1/2025   
-**Versión Actual:** 1.2.0   
+**Versión Actual:** 1.3.0 (UNDER DEV)   
 **Redes Sociales:** [Twitter/X](https://x.com/melina_stbot)   
 
 ---
@@ -84,11 +84,8 @@ Este proyecto está licenciado bajo la [Licencia MIT](LICENSE).
 ---
 
 ## 🎉 Changelog
-### 1.2.0 (21/1/2025)
-- Errores menores arreglados.
-- Se actualizó la interfaz de Config
-- Se añadió el modo "segundo plano"
-- Se actualizó el archivo de arranque.
+
+Mira los cambios [aquí](doc/changelog.md).
 
 ---
 
@@ -121,7 +118,7 @@ Here is the translated text into English:
 **Created by:** Thiago Valentín Stilo Limarino  
 **Creation Date:** 1/2/2025  
 **Release Date:** 1/11/2025  
-**Current Version:** 1.2.0  
+**Current Version:** 1.3.0 (UNDER DEV)
 **Social Media:** [Twitter/X](https://x.com/melina_stbot)   
 
 ---
@@ -199,11 +196,8 @@ This project is licensed under the [MIT License](LICENSE).
 ---
 
 ## 🎉 Changelog
-### 1.2.0 (1/21/2025)
-- Minor bug fixes.
-- Updated the Config interface.
-- Added "background mode."
-- Updated the startup file.
+
+See the changelog [here](doc/changelog.md).
 
 ---
 

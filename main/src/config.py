@@ -1,7 +1,10 @@
 import json
 import os
 import localDataBaseFolder as db
-from _cmd import config
+try:
+    from _cmd import config
+except ModuleNotFoundError:
+    from main.src._cmd import config
 
 prints = config.prints
 

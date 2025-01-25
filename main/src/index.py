@@ -13,7 +13,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import TimeoutException
-from _cmd.config import prints
+try:
+    from _cmd.config import prints
+except ModuleNotFoundError:
+    from main.src._cmd.config import prints
 import localDataBaseFolder as db
 
 # Configuración del logger para guardar los logs en un archivo
