@@ -183,10 +183,10 @@ def enviar_mensaje(user_files, message, headless, driver):
 
 # Programar tarea para enviar mensajes a todos los usuarios
 def programar_envio(user_files, message: str, hour: str, headless: bool, driver):
-    #schedule.every().day.at(hour).do(enviar_mensaje, user_files, message, headless, driver)
+    schedule.every().day.at(hour).do(enviar_mensaje, user_files, message, headless, driver)
     logging.info(f"Tarea programada para enviar mensaje a las {hour}")
     print(translations["scheduler_started"])
-    enviar_mensaje(user_files, message, headless, driver) # <-- For testing
+    #enviar_mensaje(user_files, message, headless, driver) # <-- For testing
     while True:
         schedule.run_pending()
         time.sleep(1)
