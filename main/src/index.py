@@ -84,15 +84,16 @@ def iniciar_sesion(cname, headless):
 
 
         try:
-            return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+           driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
         except:
             try:
-                return webdriver.Chrome(service=Service("main/src/data/drivers/chromedriver-win64_132/chromedriver.exe"), options=options)
+                driver =  webdriver.Chrome(service=Service("main\data\drivers\chromedriver-win64_132\chromedriver.exe"), options=options)
             except:
                 try:
-                    return webdriver.Chrome(service=Service("main/src/data/drivers/chromedriver-win64_133/chromedriver.exe"), options=options)
+                    driver =  webdriver.Chrome(service=Service("main/data/drivers/chromedriver-win64_133/chromedriver.exe"), options=options)
                 except:
-                    return webdriver.Chrome(service=Service("main/src/data/drivers/chromedriver-win64_134/chromedriver.exe"))
+                    driver =  webdriver.Chrome(service=Service("main/data/drivers/chromedriver-win64_134/chromedriver.exe"), options=options)
+        return driver
     except Exception as e:
         logging.error(f"Error al iniciar sesión en Chrome: {str(e)}")
         prints.print_colored_bold("[ERROR] " + translations["error_occurred"].format(error=str(e)), "31")
@@ -136,7 +137,7 @@ def enviar_mensaje(user_files, message, headless, driver):
 
             try:
                 element = WebDriverWait(driver, 20).until(
-                    EC.visibility_of_element_located((By.XPATH, f"//p[contains(@class, 'css-2tydh5-PInfoNickname') and text()='{username}']"))
+                    EC.visibility_of_element_located((By.XPATH, f"//p[contains(@class, 'css-1mez8np-PInfoNickname eii3f6d9') and text()='{username}']"))
                 )
             except TimeoutException:
                 prints.print_colored_bold("[ERROR] " + translations["user_not_found_timeout"].format(user=username), "31")
@@ -182,10 +183,10 @@ def enviar_mensaje(user_files, message, headless, driver):
 
 # Programar tarea para enviar mensajes a todos los usuarios
 def programar_envio(user_files, message: str, hour: str, headless: bool, driver):
-    schedule.every().day.at(hour).do(enviar_mensaje, user_files, message, headless, driver)
+    #schedule.every().day.at(hour).do(enviar_mensaje, user_files, message, headless, driver)
     logging.info(f"Tarea programada para enviar mensaje a las {hour}")
     print(translations["scheduler_started"])
-    #enviar_mensaje(user_files, message, headless, driver) # <-- For testing
+    enviar_mensaje(user_files, message, headless, driver) # <-- For testing
     while True:
         schedule.run_pending()
         time.sleep(1)
