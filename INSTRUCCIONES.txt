@@ -13,19 +13,17 @@ Antes que nada, quiero avisarte que este programa es relativamente nuevo y, por 
 
 3. Ingrese el nombre EXACTO* (incluidas las mayúsculas, minúsculas y demás caracteres) que desea darle al perfil de Google Chrome que será utilizado.
 
-4. Ingrese el nombre EXACTO* del usuario de Windows que aloja el perfil de Google Chrome.
+4. Vuelva a abrir el archivo Config.
 
-5. Vuelva a abrir el archivo Config.
+5. Ingrese en la primer y luego segunda opción e indique el horario en formato 24hs (xx:xx) al cual se enviará el mensaje automático.
 
-6. Ingrese en la primer y luego segunda opción e indique el horario en formato 24hs (xx:xx) al cual se enviará el mensaje automático.
+6. (PASO 5 E INGRESAR 3ER OPCIÓN) Ingrese el nombre que desee darle el archivo con el cual usted identificará a un usuario objetivo y luego ingrese el nombre EXACTO* que tiene el usuario objetivo en TikTok para que el programa logre identificarlo.
 
-7. (PASO 6 E INGRESAR 3ER OPCIÓN) Ingrese el nombre que desee darle el archivo con el cual usted identificará a un usuario objetivo y luego ingrese el nombre EXACTO* que tiene el usuario objetivo en TikTok para que el programa logre identificarlo.
+7. (PASO 5 E INGRESAR 4TA OPCIÓN) Ingrese el mensaje que desea enviar al usuario objetivo.
 
-8. (PASO 6 E INGRESAR 4TA OPCIÓN) Ingrese el mensaje que desea enviar al usuario objetivo.
+8. Abra el archivo Start e inicie sesión en TikTok al menos una vez (con haber iniciado una vez, no deberá hacerlo más).
 
-9. Abra el archivo Start e inicie sesión en TikTok al menos una vez (con haber iniciado una vez, no deberá hacerlo más).
-
-10. USTED A FINALIZADO EL PROCESO DE INSTALACIÓN Y CONFIGURACIÓN DE "MELINA STREAK TIKTOK BOT". A continuación se especificarán algunos problemas que puede afrontar y como solucionarlos.
+9. USTED A FINALIZADO EL PROCESO DE INSTALACIÓN Y CONFIGURACIÓN DE "MELINA STREAK TIKTOK BOT". A continuación se especificarán algunos problemas que puede afrontar y como solucionarlos.
 
 * Incluya mayúsculas, minúsculas y demás caracteres que se encuentren en el nombre del perfil.
 

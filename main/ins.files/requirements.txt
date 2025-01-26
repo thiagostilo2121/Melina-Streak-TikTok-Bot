@@ -4,3 +4,4 @@ pyperclip
 pywin32
 webdriver_manager
 schedule
+customtkinter
