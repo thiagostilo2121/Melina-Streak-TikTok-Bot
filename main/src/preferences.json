@@ -1,7 +1,7 @@
 {
-    "cname": "BOT3",
-    "hour": "00:00",
-    "message": "Mensaje automático",
-    "language": "es",
+    "cname": "",
+    "hour": "",
+    "message": "",
+    "language": "",
     "headless": false
 }
