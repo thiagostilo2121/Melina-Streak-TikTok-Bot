@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/).
 
 ### Added
 - [changelog.md](changelog.md) has been added.
+- Some pre-installed chromedrives has been added.
 - Data and User Data dirs has been added.
 - `logs` directory has been added.
 - New `import logging` in `index.py`.

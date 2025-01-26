@@ -63,7 +63,7 @@ def load_preferences():
         exit()
 
 # Iniciar sesión en Chrome con perfil de usuario
-def iniciar_sesion(user_windows, cname, headless):
+def iniciar_sesion(cname, headless):
     try:
         USERDATADIR = os.path.dirname(os.path.abspath(f"main/data/User Data/{cname}/"))
         print(USERDATADIR)
@@ -82,7 +82,17 @@ def iniciar_sesion(user_windows, cname, headless):
             options.add_argument("--disable-gpu")
             options.add_argument("--window-size=1920,1080")
 
-        return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+
+        try:
+            return webdriver.Chrome(service=Service(ChromeDriverManager().install()), options=options)
+        except:
+            try:
+                return webdriver.Chrome(service=Service("main/src/data/drivers/chromedriver-win64_132/chromedriver.exe"), options=options)
+            except:
+                try:
+                    return webdriver.Chrome(service=Service("main/src/data/drivers/chromedriver-win64_133/chromedriver.exe"), options=options)
+                except:
+                    return webdriver.Chrome(service=Service("main/src/data/drivers/chromedriver-win64_134/chromedriver.exe"))
     except Exception as e:
         logging.error(f"Error al iniciar sesión en Chrome: {str(e)}")
         prints.print_colored_bold("[ERROR] " + translations["error_occurred"].format(error=str(e)), "31")
