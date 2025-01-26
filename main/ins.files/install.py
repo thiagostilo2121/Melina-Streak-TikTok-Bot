@@ -102,6 +102,8 @@ print(f"V = {version}")
 # Create necessary directories
 db.findDataCreate("main/src/USERS")
 db.findDataCreate("main/logs/")
+db.findDataCreate("main/data/")
+db.findDataCreate("main/data/User Data/")
 db.findChaseCreate("main/logs/", "index_log")
 
 if os.name != "nt":

@@ -17,19 +17,17 @@ Despite this, I will strive to improve the installation and configuration proces
 
 3. Enter the EXACT* name (including uppercase, lowercase, and other characters) you want to assign to the Google Chrome profile to be used.
 
-4. Enter the EXACT* name of the Windows user that hosts the Google Chrome profile.
+4. Reopen the `Config` file.
 
-5. Reopen the `Config` file.
+5. Select the first and second option and specify the time in 24-hour format (xx:xx) for the automatic message to be sent.
 
-6. Select the first and second option and specify the time in 24-hour format (xx:xx) for the automatic message to be sent.
+6. (STEP 5, THEN SELECT 3RD OPTION) Enter the name you want to give the file used to identify a target user, followed by the EXACT* name of the target user on TikTok so the program can recognize them.
 
-7. (STEP 6, THEN SELECT 3RD OPTION) Enter the name you want to give the file used to identify a target user, followed by the EXACT* name of the target user on TikTok so the program can recognize them.
+7. (STEP 5, THEN SELECT 4TH OPTION) Enter the message you want to send to the target user.
 
-8. (STEP 6, THEN SELECT 4TH OPTION) Enter the message you want to send to the target user.
+8. Open the `Start` file and log in to TikTok at least once (you won't need to do this again after the first login).
 
-9. Open the `Start` file and log in to TikTok at least once (you won't need to do this again after the first login).
-
-10. CONGRATULATIONS! YOU HAVE COMPLETED THE INSTALLATION AND CONFIGURATION PROCESS FOR "MELINA STREAK TIKTOK BOT." Below, you'll find solutions to common issues you may encounter.
+9. CONGRATULATIONS! YOU HAVE COMPLETED THE INSTALLATION AND CONFIGURATION PROCESS FOR "MELINA STREAK TIKTOK BOT." Below, you'll find solutions to common issues you may encounter.
 
 * Include uppercase, lowercase, and any other special characters in the profile name.
 

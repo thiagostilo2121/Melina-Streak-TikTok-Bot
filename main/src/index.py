@@ -65,10 +65,13 @@ def load_preferences():
 # Iniciar sesión en Chrome con perfil de usuario
 def iniciar_sesion(user_windows, cname, headless):
     try:
+        USERDATADIR = os.path.dirname(os.path.abspath(f"main/data/User Data/{cname}/"))
+        print(USERDATADIR)
         options = webdriver.ChromeOptions()
         options.add_experimental_option("detach", True)
         options.add_argument(
-            rf"user-data-dir=C:\\Users\\{user_windows}\\AppData\\Local\\Google\\Chrome\\User Data\\{cname}"
+            rf"user-data-dir={USERDATADIR}\\{cname}"
+            #rf"user-data-dir=C:\\Users\\{user_windows}\\AppData\\Local\\Google\\Chrome\\User Data\\{cname}"
         )
 
         options.add_argument("--log-level=3")
@@ -108,7 +111,7 @@ def enviar_mensaje(user_files, message, headless, driver):
     try:
 
         if headless:
-            driver = iniciar_sesion(datos["wuser"], datos["cname"], headless=False)  
+            driver = iniciar_sesion(datos["cname"], headless=False)  
         
         driver.get("https://www.tiktok.com/messages")
 
@@ -185,7 +188,7 @@ if __name__ == "__main__":
         LANG_CODE = datos.get("language", "en")
         translations = load_language(LANG_CODE)
 
-        if not datos["wuser"] or not datos["cname"] or not datos["hour"] or not datos["message"]: 
+        if not datos["cname"] or not datos["hour"] or not datos["message"]: 
             logging.error("Preferencias incompletas.")
             prints.print_colored_bold("[ERROR] " + translations.get("empty_preferences_error"), "31")
             time.sleep(3)
@@ -193,7 +196,7 @@ if __name__ == "__main__":
 
         # Obtener el valor de 'headless' desde las preferencias
         headless = datos.get("headless", False)
-        if headless == False: driver = iniciar_sesion(datos["wuser"], datos["cname"], False)
+        if headless == False: driver = iniciar_sesion(datos["cname"], False)
         else: driver = None
 
         # Listar todos los usuarios disponibles

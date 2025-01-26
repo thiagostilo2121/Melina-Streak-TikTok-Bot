@@ -45,6 +45,6 @@
     "user_added": "User added.",
     "language_updated": "Language updated successfully.",
     "bot_saved": "The bot was successfully configured.",
-    "bot_config_menu": "\n[1] Set Chrome or Windows profile name\n[2] Set sending schedule\n[3] Add target user\n[4] Set automatic message\n[5] Delete target user\n[0] Back\n",
+    "bot_config_menu": "\n[1] Set Chrome profile name\n[2] Set sending schedule\n[3] Add target user\n[4] Set automatic message\n[5] Delete target user\n[0] Back\n",
     "program_config_menu": "\n[1] Set language\n[2] Set webdriver mode\n[0] Back\n"
 }

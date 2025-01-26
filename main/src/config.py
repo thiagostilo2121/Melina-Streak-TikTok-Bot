@@ -116,8 +116,6 @@ def configure_program():
 def optionBot1():
     cname = input(translations["chrome_account_name"])
     datos["cname"] = cname
-    wuser = input(translations["windows_account_name"])
-    datos["wuser"] = wuser
     save_preferences()
     db.setChase("main/src/interface", "configad", translations.get("action_successful"), "w")
     db.setChase("main/src/interface", "configadtype", "successful", "w")
