@@ -4,10 +4,18 @@ All notable changes to this project will be documented in this file.
  
 The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
-
  
-## [1.3.0] - 2025-26-01
+## [1.3.1] - 2025-01-28
+### Added
+Nothing
 
+### Changed
+Nothing
+
+### Fixed
+- Some `index.py` bugs.
+
+## [1.3.0] - 2025-01-26
 ### Added
 - [changelog.md](changelog.md) has been added.
 - Some pre-installed chromedrives has been added.

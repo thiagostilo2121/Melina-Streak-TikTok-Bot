@@ -100,10 +100,9 @@ print("Installing...")
 print(f"V = {version}")
 
 # Create necessary directories
-db.findDataCreate("main/src/USERS")
-db.findDataCreate("main/logs/")
-db.findDataCreate("main/data/")
-db.findDataCreate("main/data/User Data/")
+dirs = ["main/src/USERS/", "main/logs/", "main/data/", "main/data/User Data/"]
+for dir in dirs:
+    db.findDataCreate(dir)
 db.findChaseCreate("main/logs/", "index_log")
 
 if os.name != "nt":
