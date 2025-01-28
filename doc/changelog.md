@@ -6,7 +6,17 @@ The format is based on [Keep a Changelog](http://keepachangelog.com/)
 and this project adheres to [Semantic Versioning](http://semver.org/).
 
  
-## [1.3.0] - 2025-02-01
+## [1.3.1] - 2025-01-28
+### Added
+Nothing
+
+### Changed
+Nothing
+
+### Fixed
+- Some `index.py` bugs.
+
+## [1.3.0] - 2025-01-27
 
 ### Added
 - [changelog.md](changelog.md) has been added.

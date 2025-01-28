@@ -66,7 +66,7 @@ def load_preferences():
 def iniciar_sesion(cname, headless):
     try:
         USERDATADIR = os.path.dirname(os.path.abspath(f"main/data/User Data/{cname}/"))
-        print(USERDATADIR)
+        logging.info(USERDATADIR)
         options = webdriver.ChromeOptions()
         options.add_experimental_option("detach", True)
         options.add_argument(
@@ -119,6 +119,7 @@ def listar_usuarios():
 # Función para enviar mensaje a un usuario
 def enviar_mensaje(user_files, message, headless, driver):
     logging.info(f"Enviando mensaje a {len(user_files)} usuarios.")
+    print(f"\nEnviando mensaje a {len(user_files)} usuarios.")
     try:
 
         if headless:
@@ -137,7 +138,7 @@ def enviar_mensaje(user_files, message, headless, driver):
 
             try:
                 element = WebDriverWait(driver, 20).until(
-                    EC.visibility_of_element_located((By.XPATH, f"//p[contains(@class, 'css-1mez8np-PInfoNickname eii3f6d9') and text()='{username}']"))
+                    EC.visibility_of_element_located((By.XPATH, f"//p[contains(@class, 'PInfoNickname') and text()='{username}']"))
                 )
             except TimeoutException:
                 prints.print_colored_bold("[ERROR] " + translations["user_not_found_timeout"].format(user=username), "31")
@@ -161,7 +162,7 @@ def enviar_mensaje(user_files, message, headless, driver):
             """, campo_mensaje)  
             pyperclip.copy(message)
             campo_mensaje.send_keys(Keys.CONTROL, "v")
-            time.sleep(1)
+            time.sleep(0.5)
             campo_mensaje.send_keys(Keys.RETURN)
 
             logging.info(f"Mensaje enviado a {username}")
@@ -183,10 +184,10 @@ def enviar_mensaje(user_files, message, headless, driver):
 
 # Programar tarea para enviar mensajes a todos los usuarios
 def programar_envio(user_files, message: str, hour: str, headless: bool, driver):
-    #schedule.every().day.at(hour).do(enviar_mensaje, user_files, message, headless, driver)
-    logging.info(f"Tarea programada para enviar mensaje a las {hour}")
+    schedule.every().day.at(hour).do(enviar_mensaje, user_files, message, headless, driver)
+    logging.info(f"Tarea programada para enviar mensaje a las {hour}hs")
     print(translations["scheduler_started"])
-    enviar_mensaje(user_files, message, headless, driver) # <-- For testing
+    #enviar_mensaje(user_files, message, headless, driver) # <-- For testing
     while True:
         schedule.run_pending()
         time.sleep(1)
