@@ -16,7 +16,7 @@ Nothing
 ### Fixed
 - Some `index.py` bugs.
 
-## [1.3.0] - 2025-01-27
+## [1.3.0] - 2025-01-26
 
 ### Added
 - [changelog.md](changelog.md) has been added.
